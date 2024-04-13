@@ -72,4 +72,3 @@ func DeleteBook(db *sql.DB, bookID int) error {
 	_, err := db.Exec("DELETE FROM books WHERE id = ?", bookID)
 	return err
 }
-
